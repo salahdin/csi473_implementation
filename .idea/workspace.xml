@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/Connector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/admin.form" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/admin.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment 2/NetBeansProjects/Lab6-Student/src/admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../dataV/data_visualization" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../data_visualization/.idea/data_visualization.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../data_visualization/.idea/data_visualization.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data_visualization/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data_visualization/.idea/misc.xml" afterDir="false" />
@@ -390,7 +391,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="csi473" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csi473" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
