@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Vehicle(models.Model):
     vehicle_id = models.IntegerField()
     vehicle_type = models.CharField(max_length=100)
