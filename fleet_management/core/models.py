@@ -25,3 +25,10 @@ class Reservation(models.Model):
     customer = models.ForeignKey(Customer,related_name='Customer_id',on_delete=models.CASCADE)
     rent_from = models.DateTimeField()
     rent_to = models.DateField()
+
+class ReturnVehicle(models.Model):
+    customer = models.ForeignKey(Customer,related_name='Customer_id',on_delete=models.CASCADE)
+    vehicle = models.ForeignKey(Vehicle,related_name='vehicle_id',on_delete=models.CASCADE)
+    DOR = models.DateField()
+    condition = models.CharField(max_length =200)
+    mileage = models.DecimalField(max_digits=5, decimal_places=2)
