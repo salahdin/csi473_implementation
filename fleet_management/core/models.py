@@ -22,3 +22,6 @@ class Reservation(models.Model):
     customer = models.ForeignKey(User ,related_name='Customer_id',on_delete=models.CASCADE)
     rent_from = models.DateTimeField()
     rent_to = models.DateField()
+
+    def __str__():
+        return rent_from + rent_to
