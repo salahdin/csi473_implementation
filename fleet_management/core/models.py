@@ -14,8 +14,8 @@ class Vehicle(models.Model):
     vehicle_Pnumber = models.CharField(max_length=7)
 
 
-    def __str__():
-        return vehicle_name
+    def __str__(self):
+        return self.vehicle_name
 
 class Reservation(models.Model):
     vehicle = models.ForeignKey(Vehicle,related_name='vehicle_id',on_delete=models.CASCADE)
@@ -23,5 +23,5 @@ class Reservation(models.Model):
     rent_from = models.DateTimeField()
     rent_to = models.DateField()
 
-    def __str__():
-        return rent_from + rent_to
+    def __str__(self):
+        return self.rent_from + self.rent_to
