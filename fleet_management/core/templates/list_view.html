@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    {% for i in vehicles %}
-        <p>{{ i.vehicle_name }}</p>
+{% extends 'templates/base.html' %}
+
+{% block content %}
+    {% for vehicle in vehicles %}
+        <a href="{% url 'vehicle_detail' id=vehicle.id %}"><h1>{{ vehicle.vehicle_name }}</h1></a>
+        <h3>{{ vehicle.vehicle_type }}</h3>
+        <p>{{ vehicle.vehicle_Pnumber }}</p>
+        <p>{{vehicle.color}}</p>
     {%endfor%}
-</body>
-</html>
+{% endblock %}
