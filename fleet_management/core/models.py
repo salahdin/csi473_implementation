@@ -10,12 +10,18 @@ class Vehicle(models.Model):
     color = models.CharField(max_length=100,verbose_name="vehicle color",null=True)
     photo = models.ImageField(upload_to='cars', null=True)
 
+    def __str__(self):
+        return self.vehicle_name
+
 
 class Reservation(models.Model):
     vehicle = models.ForeignKey(Vehicle, related_name='vehicle_id', on_delete=models.CASCADE)
     customer = models.ForeignKey(User, related_name='Customer_id', on_delete=models.CASCADE)
     rent_from = models.DateTimeField(verbose_name="date rented")
     rent_to = models.DateField(verbose_name="date returned")
+
+    def __str__(self):
+        return self.rent_from + self.rent_to
 
 
 class ReturnVehicle(models.Model):
@@ -25,3 +31,5 @@ class ReturnVehicle(models.Model):
     condition = models.CharField(max_length=200)
     mileage = models.DecimalField(max_digits=5, decimal_places=2)
 
+    def __str__(self):
+        return self.mileage
