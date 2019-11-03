@@ -20,10 +20,6 @@ class Reservation(models.Model):
     rent_from = models.DateTimeField(verbose_name="date rented")
     rent_to = models.DateField(verbose_name="date returned")
 
-    def __str__(self):
-        return self.rent_from + self.rent_to
-
-
 class ReturnVehicle(models.Model):
     customer = models.ForeignKey(User, related_name='return_Customer_id', on_delete=models.CASCADE)
     vehicle = models.ForeignKey(Vehicle, related_name='return_vehicle_id', on_delete=models.CASCADE)

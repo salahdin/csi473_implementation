@@ -2,7 +2,7 @@
 
 {% block content %}
     {% for vehicle in vehicles %}
-        <a href="{% url 'vehicle_detail' id=vehicle.id %}"><h1>{{ vehicle.vehicle_name }}</h1></a>
+        <a href="{% url 'core:vehicle_detail' id=vehicle.id %}"><h1>{{ vehicle.vehicle_name }}</h1></a>
         <h3>{{ vehicle.vehicle_type }}</h3>
         <p>{{ vehicle.vehicle_Pnumber }}</p>
         <p>{{vehicle.color}}</p>

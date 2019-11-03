@@ -19,8 +19,14 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="mt-2">Questionnaire</h1>
           <hr class="mt-0 mb-4">
+            <div style="align: left">
+                {% if user.is_authenticated %}
+                    <h4 class="mt-2">Welcome {{ user.username }}</h4>
+                {% else %}
+                    <a href="{% url django.contrib.auth.login %}">Login</a>
+                    {% endif %}
+            </div>
           {% block content %}
           {% endblock %}
         </div>

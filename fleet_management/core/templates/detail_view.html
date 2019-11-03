@@ -3,4 +3,9 @@
 {% block content %}
     <h1>{{ object.vehicle_name }}</h1>
     <p>{{ object.vehicle_description }}</p>
+    <form method="POST" action="{% url 'core:res' object.id %}">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-success;">reserve</button>
+    </form>
 {% endblock %}
