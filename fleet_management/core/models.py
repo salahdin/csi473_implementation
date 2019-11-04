@@ -8,7 +8,7 @@ class Vehicle(models.Model):
     vehicle_description = models.TextField(max_length=255)
     vehicle_Pnumber = models.CharField(max_length=7)
     color = models.CharField(max_length=100,verbose_name="vehicle color",null=True)
-    photo = models.ImageField(upload_to='cars', null=True)
+    photo = models.ImageField(null=True)
 
     def __str__(self):
         return self.vehicle_name
